@@ -1,0 +1,36 @@
+{
+  "name": "social-proof-section-master",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "prettier": "prettier --config .prettierrc --write .",
+    "eslint": "eslint --fix ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "eslint": "^7.32.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.4.1",
+    "sass": "^1.43.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,scss,html,json}": [
+      "prettier --write"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix"
+    ]
+  }
+}
