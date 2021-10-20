@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+:root {
+  /* Colors */
+  --clr-very-dark-magenta: #502050;
+  --clr-soft-pink: #ee68a4;
+  --clr-dark-grayish-magenta: #937b92;
+  --clr-light-grayish-magenta: #f7f2f7;
+  --clr-white: white;
+  /* Fonts Families */
+  --ff-primary: 'Spartan', sans-serif;
+  /* Fonts Sizes */
+  --fs-title: 2rem;
+  --fs-body: 0.9375rem;
+  /* Fonts Weight */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+
+body {
+  background-color: var(--clr-very-light-gray);
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  color: var(--clr-grayish-blue);
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  position: relative;
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.attribution {
+  display: none;
+  position: fixed;
+  height: 20px;
+  font-size: 11px;
+  text-align: center;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.attribution a {
+  color: #4c4e61;
+}
+@media only screen and (min-width: 1440px) {
+  .attribution {
+    display: block;
+  }
+}
+/*# sourceMappingURL=main.css.map */
