@@ -95,8 +95,17 @@ th {
   --fw-bold: 700;
 }
 
-body {
-  background-color: var(--clr-very-light-gray);
+body::before {
+  content: '';
+  height: 1530px;
+  background-image: url(../design/mobile-design.jpg);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  z-index: -1;
 }
 
 :root {
@@ -106,7 +115,7 @@ body {
 body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
-  color: var(--clr-grayish-blue);
+  color: var(--clr-dark-grayish-magenta);
 }
 
 .site {
@@ -141,5 +150,27 @@ body {
   .attribution {
     display: block;
   }
+}
+
+.social-proof {
+  padding: 82px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+.social-proof__title {
+  text-align: center;
+  font-size: var(--fs-title);
+  font-weight: var(--fw-bold);
+  color: var(--clr-very-dark-magenta);
+  line-height: 1;
+  letter-spacing: -0.0625rem;
+  margin-bottom: 24px;
+}
+.social-proof__lead {
+  font-size: 0.875rem;
+  text-align: center;
+  letter-spacing: 0.00625rem;
+  line-height: 1.8;
 }
 /*# sourceMappingURL=main.css.map */

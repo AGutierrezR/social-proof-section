@@ -1,3 +1,16 @@
 body {
-  background-color: var(--clr-very-light-gray);
+  // background-color: var(--clr-very-light-gray);
+
+  &::before {
+    content: '';
+    height: 1530px;
+    background-image: url(../design/mobile-design.jpg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    z-index: -1;
+  }
 }

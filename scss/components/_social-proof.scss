@@ -1,0 +1,23 @@
+.social-proof {
+  padding: 82px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+
+  &__title {
+    text-align: center;
+    font-size: var(--fs-title);
+    font-weight: var(--fw-bold);
+    color: var(--clr-very-dark-magenta);
+    line-height: 1;
+    letter-spacing: -0.0625rem;
+    margin-bottom: 24px;
+  }
+
+  &__lead {
+    font-size: 0.875rem;
+    text-align: center;
+    letter-spacing: 0.00625rem;
+    line-height: 1.8;
+  }
+}
