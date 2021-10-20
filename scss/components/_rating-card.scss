@@ -1,0 +1,19 @@
+.rating-card {
+  padding: 18px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: var(--fw-bold);
+  background-color: var(--clr-light-grayish-magenta);
+  border-radius: 8px;
+
+  &__stars {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    line-height: 1;
+  }
+}

@@ -173,4 +173,27 @@ body {
   letter-spacing: 0.00625rem;
   line-height: 1.8;
 }
+.social-proof__ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rating-card {
+  padding: 18px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: var(--fw-bold);
+  background-color: var(--clr-light-grayish-magenta);
+  border-radius: 8px;
+}
+.rating-card__stars {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 16px;
+}
+.rating-card__description {
+  line-height: 1;
+}
 /*# sourceMappingURL=main.css.map */
