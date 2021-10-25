@@ -1,7 +1,7 @@
 @use '../abstracts/' as *;
 
 .social-proof {
-  padding: 82px 24px;
+  padding: 5.125rem 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 2.375rem;
@@ -18,7 +18,7 @@
     color: var(--clr-very-dark-magenta);
     line-height: 1;
     letter-spacing: -0.0625rem;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
   }
 
   &__lead {
@@ -46,7 +46,7 @@
     grid-template-columns: 1fr 1fr;
     padding: 0;
     grid-template-rows: 1fr 1fr;
-    gap: 32px;
+    gap: 2rem;
 
     &__introduction {
       max-width: 35ch;
@@ -54,8 +54,8 @@
     }
 
     &__title {
-      margin-top: 32px;
-      margin-bottom: 12px;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
       line-height: 1.05;
       letter-spacing: -0.85px;
     }
@@ -84,9 +84,9 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: minmax(max-content, 264px);
-      padding-top: 20px;
+      padding-top: 1.25rem;
       grid-column: 1 / -1;
-      gap: 30px;
+      gap: 1.875rem;
 
       & .testimonial-card:nth-child(1) {
         align-self: start;

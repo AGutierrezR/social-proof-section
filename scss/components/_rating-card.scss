@@ -1,9 +1,9 @@
 @use '../abstracts/' as *;
 
 .rating-card {
-  padding: 16px;
+  padding: 1rem;
   text-align: center;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: var(--fw-bold);
   background-color: var(--clr-light-grayish-magenta);
   border-radius: 8px;
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     gap: 0.5rem;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
   }
 
   &__description {
@@ -22,10 +22,10 @@
   }
 
   @include media-breakpoint('desktop') {
-    padding: 20px 28px;
+    padding: 1.25rem 1.75rem;
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
 
     &__stars {
       display: flex;
