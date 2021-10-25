@@ -191,13 +191,17 @@ h1 {
     grid-template-columns: 1fr 1fr;
     padding: 0;
     grid-template-rows: 1fr 1fr;
+    gap: 32px;
   }
   .social-proof__introduction {
     max-width: 35ch;
     text-align: left;
   }
   .social-proof__title {
-    margin-bottom: 18px;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    line-height: 1.05;
+    letter-spacing: -0.85px;
   }
   .social-proof__ratings {
     display: grid;
@@ -205,7 +209,7 @@ h1 {
     align-content: center;
   }
   .social-proof__ratings li {
-    width: 84%;
+    width: min(85%, 445px);
   }
   .social-proof__ratings li:nth-child(1) {
     justify-self: left;
@@ -220,6 +224,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: minmax(max-content, 264px);
+    padding-top: 20px;
     grid-column: 1/-1;
     gap: 30px;
   }
@@ -253,7 +258,7 @@ h1 {
 }
 @media only screen and (min-width: 90em) {
   .rating-card {
-    padding: 18px 28px;
+    padding: 20px 28px;
     display: flex;
     align-items: center;
     gap: 32px;
@@ -261,9 +266,6 @@ h1 {
   .rating-card__stars {
     display: flex;
     margin-bottom: 0;
-  }
-  .rating-card__description {
-    line-height: 1;
   }
 }
 

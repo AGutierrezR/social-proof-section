@@ -20,7 +20,7 @@
   }
 
   @include media-breakpoint('desktop') {
-    padding: 18px 28px;
+    padding: 20px 28px;
     display: flex;
     align-items: center;
     gap: 32px;
@@ -28,10 +28,6 @@
     &__stars {
       display: flex;
       margin-bottom: 0;
-    }
-
-    &__description {
-      line-height: 1;
     }
   }
 }

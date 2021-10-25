@@ -46,6 +46,7 @@
     grid-template-columns: 1fr 1fr;
     padding: 0;
     grid-template-rows: 1fr 1fr;
+    gap: 32px;
 
     &__introduction {
       max-width: 35ch;
@@ -53,7 +54,10 @@
     }
 
     &__title {
-      margin-bottom: 18px;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      line-height: 1.05;
+      letter-spacing: -0.85px;
     }
 
     &__ratings {
@@ -62,7 +66,7 @@
       align-content: center;
 
       li {
-        width: 84%;
+        width: min(85%, 445px);
       }
 
       li:nth-child(1) {
@@ -80,7 +84,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: minmax(max-content, 264px);
-
+      padding-top: 20px;
       grid-column: 1 / -1;
       gap: 30px;
 
