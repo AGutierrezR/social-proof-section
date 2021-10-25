@@ -1,11 +1,18 @@
+@use '../abstracts/' as *;
+
 .social-proof {
   padding: 82px 24px;
   display: flex;
   flex-direction: column;
   gap: 2.25rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__introduction {
+    text-align: center;
+  }
 
   &__title {
-    text-align: center;
     font-size: var(--fs-title);
     font-weight: var(--fw-bold);
     color: var(--clr-very-dark-magenta);
@@ -16,7 +23,6 @@
 
   &__lead {
     font-size: 0.875rem;
-    text-align: center;
     letter-spacing: 0.00625rem;
     line-height: 1.8;
   }
@@ -31,5 +37,63 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+
+  @include media-breakpoint('desktop') {
+    max-width: 1110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    grid-template-rows: 1fr 1fr;
+
+    &__introduction {
+      max-width: 35ch;
+      text-align: left;
+    }
+
+    &__title {
+      margin-bottom: 18px;
+    }
+
+    &__ratings {
+      display: grid;
+      grid-template-rows: repeat(3, 3.5rem);
+      align-content: center;
+
+      li {
+        width: 84%;
+      }
+
+      li:nth-child(1) {
+        justify-self: left;
+      }
+      li:nth-child(2) {
+        justify-self: center;
+      }
+      li:nth-child(3) {
+        justify-self: right;
+      }
+    }
+
+    &__testimonials {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: minmax(max-content, 264px);
+
+      grid-column: 1 / -1;
+      gap: 30px;
+
+      & .testimonial-card:nth-child(1) {
+        align-self: start;
+      }
+
+      & .testimonial-card:nth-child(2) {
+        align-self: center;
+      }
+
+      & .testimonial-card:nth-child(3) {
+        align-self: end;
+      }
+    }
   }
 }

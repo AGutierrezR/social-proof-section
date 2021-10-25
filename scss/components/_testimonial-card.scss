@@ -1,3 +1,5 @@
+@use '../abstracts/' as *;
+
 .testimonial-card {
   background-color: var(--clr-very-dark-magenta);
   border-radius: 8px;
@@ -33,5 +35,9 @@
     font-weight: var(--fw-medium);
     line-height: 1.7;
     letter-spacing: -0.3px;
+  }
+
+  @include media-breakpoint('desktop') {
+    padding: 38px 32px;
   }
 }

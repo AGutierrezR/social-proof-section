@@ -1,3 +1,5 @@
+@use '../abstracts/' as *;
+
 .rating-card {
   padding: 18px;
   text-align: center;
@@ -15,5 +17,21 @@
 
   &__description {
     line-height: 1;
+  }
+
+  @include media-breakpoint('desktop') {
+    padding: 18px 28px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    &__stars {
+      display: flex;
+      margin-bottom: 0;
+    }
+
+    &__description {
+      line-height: 1;
+    }
   }
 }
