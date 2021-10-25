@@ -1,5 +1,9 @@
 $font-stack: (
-  primary: (
+  heading: (
+    'Spartan',
+    sans-serif,
+  ),
+  body: (
     'Spartan',
     sans-serif,
   ),
@@ -9,6 +13,9 @@ $type-scale: (
   mobile: (
     title: 2rem,
     body: 0.9375rem,
+  ),
+  desktop: (
+    title: 2.9rem,
   ),
 );
 

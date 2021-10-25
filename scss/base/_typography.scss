@@ -3,7 +3,11 @@
 }
 
 body {
-  font-family: var(--ff-primary);
+  font-family: var(--ff-body);
   font-size: var(--fs-body);
   color: var(--clr-dark-grayish-magenta);
+}
+
+h1 {
+  font-family: var(--ff-heading);
 }
