@@ -101,6 +101,19 @@ th {
   }
 }
 
+body {
+  background-image: url(../images/bg-pattern-top-mobile.svg),
+    url(../images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: left 0 top 0, right 0 bottom 0;
+}
+@media only screen and (min-width: 90em) {
+  body {
+    background-image: url(../images/bg-pattern-top-desktop.svg),
+      url(../images/bg-pattern-bottom-desktop.svg);
+  }
+}
+
 :root {
   font-size: 16px;
 }
