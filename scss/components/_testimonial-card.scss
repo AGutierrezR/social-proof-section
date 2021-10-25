@@ -4,17 +4,18 @@
   background-color: var(--clr-very-dark-magenta);
   border-radius: 8px;
   color: var(--clr-white);
-  padding: 40px 32px 32px;
+  padding: 40px 32px 28px;
   font-size: 13px;
 
   &__customer {
-    margin-bottom: 30px;
+    margin-bottom: 1.75rem;
+    display: flex;
+    align-items: center;
 
     &-picture {
       width: 2.625rem;
       height: 2.625rem;
       border-radius: 50%;
-      float: left;
       margin-right: 1.25rem;
     }
 

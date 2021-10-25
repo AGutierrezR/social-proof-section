@@ -1,7 +1,7 @@
 @use '../abstracts/' as *;
 
 .rating-card {
-  padding: 18px;
+  padding: 16px;
   text-align: center;
   font-size: 13px;
   font-weight: var(--fw-bold);
@@ -12,11 +12,11 @@
     display: flex;
     justify-content: center;
     gap: 0.5rem;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   &__description {
-    line-height: 1;
+    line-height: 1.3;
   }
 
   @include media-breakpoint('desktop') {
